@@ -1,0 +1,56 @@
+https://www.includehelp.com/dot-net/array-of-objects-in-c-sharp.aspx
+
+namespace lab_four
+{
+    internal class Lab_four
+    {
+        public static void Main()
+        {
+        }
+        public class Square
+        {
+            public Square(int number, int modifier, bool Snake, bool Ladder)
+            {
+                number = 0;
+                modifier = 0;
+                Snake = false;
+                Ladder = false;
+            }
+        }
+
+        public class game
+        {
+            void StartMethod()
+            {
+                while (true)
+                {
+                    Square SnakesSquare = new Square(1, -10, true, false);
+                    Square LadderSquare = new Square(1, 10, true, false);
+                    Square NormalSquare = new Square(1, 1, false, false);
+                }
+
+            }
+
+            void FillBoard()
+            {
+                Square[] SnakesArray = new Square[6];
+                SnakesArray[0] = new Square(13, -10, true, false);
+                SnakesArray[1] = new Square(25, -10, true, false);
+                SnakesArray[2] = new Square(38, -10, true, false);
+                SnakesArray[3] = new Square(41, -10, true, false);
+                SnakesArray[4] = new Square(57, -10, true, false);
+                SnakesArray[5] = new Square(68, -10, true, false);
+                Square[] LaddersArray = new Square[6];
+                LaddersArray[0] = new Square(13, -10, true, false);
+                LaddersArray[1] = new Square(25, -10, true, false);
+                LaddersArray[2] = new Square(38, -10, true, false);
+                LaddersArray[3] = new Square(41, -10, true, false);
+                LaddersArray[4] = new Square(57, -10, true, false);
+                LaddersArray[5] = new Square(68, -10, true, false);
+
+                Console.WriteLine(SnakesArray);
+                Console.WriteLine(LaddersArray);
+            }
+        }
+    }
+}
